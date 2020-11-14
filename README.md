@@ -1,2 +1,0 @@
-# ScribblerProject
-upgrad's project
