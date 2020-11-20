@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>third page</title>
+
+    <link rel="stylesheet" href="../style/header.css">
+    <link rel="stylesheet" href="../style/post.css">
+    <link href='../style/font.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+<body class="third">
+<!-- TODO: Include all your code for the header and home page here -->
+    <div class="header">
+       
+      <input class="topButtons" id="myBtn1" type="button" value="Sign Up">
+      
+      <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h5 class="get_started">Get Started</h5>
+    <hr style="height:1px;border-width:0;color:gray;background-color:gray"/><br>
+    <label for="fname" class="fname">Full name</label>
+    <input type="text"  placeholder="Enter Full Name" id="fname" name="fname" required >
+    
+    <label for="Uname" class="fname">UserName</label>
+    <input type="text"  placeholder="Enter UserName" id="uname" name="fname" required >
+    
+    <label for="pwd" class="fname">Password</label>
+    <input type="password" placeholder="Enter password" id="psd" name="fname" required>
+    
+    <label for="Cpwd" class="fname">Confirm Password</label>
+    <input type="password"  placeholder="Confirm Password" id="cpsd" name="fname" required >
+    
+    <input class="sgnup" id="SGNbtn" type="button" value="Sign Up"><br>
+  </div>
+</div>
+
+
+     
+     
+<div class="header1">  
+<input class="topButtons" id="myBtn2" type="button" value="Sign In">
+
+<!-- The Modal -->
+<div id="myModals" class="modals">
+
+      <!-- Modal content -->
+  <div class="modal-content">
+      <span class="close1">&times;</span>
+      <h5 class="get_started">Welcome Back</h5>
+      <hr style="height:1px;border-width:0;color:gray;background-color:gray"/><br>
+      <label for="Uname" class="Uname">Username</label>
+      <input type="text"   placeholder="Enter UserName" id="fname1" name="fname" required>
+      <label for="pwd" class="fname">Password</label>
+      <input type="password"  placeholder="Enter password" id="psd1" name="fname" required>
+      <input class="topButtons1" id="resign" type="button" value="Sign In"><br>
+
+      <h2 id="ntm">Not a member?
+        <input class="sgnbtn" id="resg" type="button" value="Sign Up"><br>
+      </h2>
+     
+  </div>
+  </div>
+  <a id="pageTitle" class="logo-title">ScriBBler</a>
+  <p class="middleText">Explore, Imagine , Create</p>
+  </div>
+
+
+  <!-----------------------------------------------------Creation of edit page------------------------------------------------>
+
+
+   <div class="row">
+        <div class="col space-around-post">
+            <!-------------- This is for post title --------------->
+           <div class="post-title">The legacy of Jimi Hendrix</div>
+        </div>
+    </div>
+    <div class="row top-space  space-around-post">
+        <div class="col-6 author-name">
+            <!-- author -->
+           <i> <p id="jim">Jimi</p></i>
+        </div>
+        <div class="col-6 button-align">
+            <!--This is for edit and save turron-->
+            <button class="button-type1" id="editButton" onclick="edit_and_save();"><span class="button-text" id="buttonText">Edit</span> 
+                <i class="fa fa-edit" id="buttonSymbol"></i>
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <!--This is for post content-->
+        <div class="col space-around-post">
+            <p class="post-look" id="postContent" contenteditable="false">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had even ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres including blues, R&amp;B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing previously undesirable technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in main stream rock.[348] He rejected the standard barre chord fretting techniques used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's left hand would play and other fingers playing melody as right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords lead lines together, giving the audio impression that more than one guitarist was performing.[351][nb41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling stone commented: "Hendrix pioneered the use of the instrument as an electric sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb42] Aledort wrote: "In rock guitar, there are but two eras &mdash; before Hendrix and after Hendrix."
+            </p>
+        </div>
+    </div>
+    <div class="row button-top-space">
+        <div class="col space-around-post">
+            <div>
+                <!-- like button -->
+                <button class="button-type2  button-text" id="lk" onclick="likeUpdate();">
+                    <i class="fa fa-thumbs-up"></i>
+                    <span id="likeButtonText">Like</span> 
+                </button>
+            </div>
+            <!-- number of likes updation area -->
+            <div id="like-updation">
+                Be the first one to like this!
+            </div>
+        </div>
+    </div>
+    <div class="row top-space">
+        <div class="col space-around-post">
+            <div>
+                <!-- This is forcomment box -->
+                <textarea class="comment-area" id="taken_comment" rows="4" placeholder="Leave a comment..." for="commentButton" contenteditable="true"></textarea>
+            </div>
+            <!--Comment button-->
+            <div>
+                <button class="button-type3  button-text" id="commentButton" onclick="addComment(taken_comment);">Comment</button>
+            </div>
+        </div>
+    </div>
+    <!-- This is for comment display -->
+    <div class="row top-space bottpm-space">
+        <div class="col space-around-post">
+            <div class="comment-helping-text">All Comments</div>
+            <div class="comment-box" id="commentBox">
+            </div>
+        </div>
+    </div>
+</div>
+  <script src="../js/post.js"></script>
+<script src="../js/header.js"></script>
+</body>
+</html>

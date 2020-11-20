@@ -13,7 +13,10 @@ button {
     opacity: 0.9;
 }
 
-
+  /* changing the color to white of the text below the logo*/
+.middleText {
+  color: #fefefe;
+}
   /* ------------------ blogpost boxes---------------------- */    
 
 .comment{
