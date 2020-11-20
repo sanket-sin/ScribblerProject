@@ -19,10 +19,7 @@ button {
 #tagline{
   color: rgb(238, 235, 238);
 }
-.blogPost{
-  
-  
-}
+
 .postPair{
   display: inline-block;
   display: flex;
@@ -61,14 +58,21 @@ h4{
   margin-right: 2%;
   margin-top: 1%;
   display: inline;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
 }
 .fa:hover{
   color: red;
   cursor: pointer;
 }
 .threeDot{
-  font-size: 28px;
-  position: absolute;
-  bottom: 57%;
-  left: 44%;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: end;
+    position: absolute;
+    bottom: 57%;
+    margin-left: 475px;
+    margin-bottom: 20px;
 }
